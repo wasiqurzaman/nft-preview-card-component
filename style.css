@@ -1,0 +1,137 @@
+/* 
+Font Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+Font Weights: 300, 400, 600
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 62.5% = 1rem = 10px */
+  font-size: 62.5%;
+}
+
+:root {
+  /* Colors */
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  /* ### Neutral */
+  --dark-blue-main: hsl(217, 54%, 11%);
+  --dark-blue-cardbg: hsl(216, 50%, 16%);
+  --dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--White);
+  background-color: var(--dark-blue-main);
+  padding: 1rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 36rem;
+  padding: 2.4rem;
+  background-color: var(--dark-blue-cardbg);
+  border-radius: 10px;
+}
+
+.img-box {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2.4rem;
+}
+
+.img-nft {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+p.desc {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 1.6rem;
+  font-weight: 4300;
+  letter-spacing: 0.8px;
+  color: var(--Soft-blue);
+  margin-bottom: 2.4rem;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.price-box p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--Soft-blue);
+}
+
+.price-nft {
+  font-weight: 600;
+  color: var(--Cyan);
+}
+
+hr {
+  border: none;
+  height: 0px;
+  border-top: 1px solid var(--dark-blue-line);
+  margin-bottom: 2.4rem;
+}
+
+.author-box {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.img-avatar {
+  max-width: 4rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.author {
+  color: var(--Soft-blue);
+  font-weight: 300;
+}
+
+.author span {
+  color: #fff;
+}
+
+/* 27*16px = 432px  */
+
+@media (max-width: 27em) {
+  html {
+    font-size: 56%;
+  }
+  .card {
+    max-width: 34rem;
+  }
+}
