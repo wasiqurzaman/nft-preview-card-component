@@ -97,6 +97,8 @@ h3 {
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  display: inline-block;
+  /* width: fit-content; */
   cursor: pointer;
   transition: all 0.3s;
 }
